@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий "Baxter of California"</title>
-	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 	<header class="main-header">
       	<div class="container">
-      		<a href="index.html"><div class="logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></div></a>
+      		<a href="index.html" class="logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
         	<nav class="main-navigation">
           		<ul>
             		<li><a href="#">Информация</a></li>
             		<li><a href="#">Новости</a></li>
             		<li><a href="price.html">Прайс-лист</a></li>
-            		<li><a href="shop.html">Магазин</a></li>
+            		<li><a href="shop.html" class="active">Магазин</a></li>
             		<li><a href="index.html#contacts">Контакты</a></li>
           		</ul>
         	</nav>
@@ -38,32 +38,36 @@
 				</ul>
 			</div>
 
-			<div class="goods-gallery">
-				<a href="#" class="good-gallery-img main-pic"><img src="img/item-pic-big.jpg" alt="Набор для путешествий «Baxter of California»"></a>
-				<a href="#" class="good-gallery-img"><img src="img/item-pic-small-1.jpg" alt="Набор для путешествий «Baxter of California»"></a>
-				<a href="#" class="good-gallery-img"><img src="img/item-pic-small-2.jpg" alt="Набор для путешествий «Baxter of California»"></a>
-				<a href="#" class="good-gallery-img"><img src="img/item-pic-small-3.jpg" alt="Набор для путешествий «Baxter of California»"></a>
+			<div class="product-gallery">
+				<a href="#" class="product-gallery-img main-pic"><img src="img/item-pic-big.jpg" alt="Набор для путешествий «Baxter of California»"></a>
+
+				<div class="pic-row">
+					<a href="#" class="product-gallery-img"><img src="img/item-pic-small-1.jpg" alt="Набор для путешествий «Baxter of California 1»"></a>
+					<a href="#" class="product-gallery-img"><img src="img/item-pic-small-2.jpg" alt="Набор для путешествий «Baxter of California 2»"></a>
+					<a href="#" class="product-gallery-img"><img src="img/item-pic-small-3.jpg" alt="Набор для путешествий «Baxter of California 3»"></a>
+				</div>
+					
 			</div>
 
-			<div class="goods-info-block">
-				<div class="goods-info">
-					<span">Есть в наличии</span>
-					<span class="goods-article">Артикул: Dexter-ae</span>
+			<div class="product-info-block">
+				<div class="product-info">
+					<span>Есть в наличии</span>
+					<span class="product-article">Артикул: Dexter-ae</span>
 				</div>
 
-				<div class="goods-description">
+				<div class="product-description">
 					<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для
 					бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
 					крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 					
 					<div class="price-and-buy">
-						<span>2900 руб.</span>
-						<button class="btn good-btn" type="button">Купить</button>
+						<span>2900 ₽</span>
+						<a class="btn product-btn">Купить</a>
 					</div>
 					
-					<div class="goods-inside">
+					<div class="product-inside">
 						<h2>В набор входят:</h2>
-						<ul class="list good-inside-list">
+						<ul class="list product-inside-list">
 							<li>Средство для умывания (50 мл)</li>
 							<li>Увлажняющий крем (50 мл)</li>
 							<li>Крем для бритья (50 мл)</li>
@@ -88,9 +92,9 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">

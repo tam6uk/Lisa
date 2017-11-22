@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -27,6 +27,7 @@
 
     <main>
         <div class="container">
+
             <div class="index-logo">
                 <img src="img/index-logo.png" width="371" height="155" alt="Барбершоп «Бородинский»">
             </div>
@@ -67,10 +68,13 @@
                     <h2 class="index-content-title">Фотогалерея</h2>
                     <div class="gallery">
                         <figure class="gallery-content">
-                            <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В студии  барбершопа «Бородинский»">
+                            <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
                         </figure>
-                        <button class="btn gallery-prev" type="button">Назад</button>
-                        <button class="btn gallery-next" type="button">Вперёд</button>
+                        <div class="btn-row">
+                            <button class="btn gallery-prev" type="button">Назад</button>
+                            <button class="btn gallery-next" type="button">Вперёд</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -78,28 +82,33 @@
             <div class="index-content" id="contacts">
                 <div class="index-content-left">
                     <h2 class="index-content-title">Контактная информация</h2>
-                    <p>
-                        Барбершоп «Бородинский»<br>
-                        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                        Телефон: +7 (812) 666-02-66
-                     </p>
-                     <p>
-                        Время работы:<br>
-                        пн — пт: с 10:00 до 22:00<br>
-                        сб — вс: с 10:00 до 19:00
-                     </p>
-                    <a class="btn" href="#">Как проехать</a>
-                    <a class="btn" href="#">Обратная связь</a>
+                    <div class="address-and-time">
+                        <p class="address">
+                            Барбершоп «Бородинский»<br>
+                            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                            Телефон: +7 (812) 666-02-66
+                        </p>
+                        <p class="time">
+                            Время работы:<br>
+                            пн — пт: с 10:00 до 22:00<br>
+                            сб — вс: с 10:00 до 19:00
+                        </p>
+                    </div>
+                    
+                    <div class="btn-row">
+                        <a class="btn" href="#">Как проехать</a>
+                        <a class="btn" href="#">Обратная связь</a>
+                    </div>                   
                 </div>
 
                 <div class="index-content-right">
                     <h2 class="index-content-title">Записаться</h2>
                     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                        <input type="text" name="date" value="" placeholder="Дата">
-                        <input type="text" name="time" value="" placeholder="Время">
-                        <input type="text" name="name" value="" placeholder="Ваше имя">
-                        <input type="tel" name="phone" value="" placeholder="Телефон">
+                        <input type="text" name="date" value="" placeholder="08.10.2017">
+                        <input type="text" name="time" value="" placeholder="10:00">
+                        <input type="text" name="name" value="" placeholder="Борода">
+                        <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
                         <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -118,9 +127,9 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
@@ -133,13 +142,13 @@
     <div class="popup upper">
         <button class="popup-close" title="Закрыть"></button>
         <h2 class="popup-header">Личный кабинет</h2>
-        <p class="popup-text">Введите свой логин и пароль</p>
+        <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
         <form class="popup-form" action="#" method="get">
             <input type="text" class="popup-login" placeholder="Логин">
             <input type="password" class="popup-password" placeholder="Пароль">
             <div class="help-pass">
                 <input type="checkbox" class="popup-check" id="popup-check">
-                <label for="popup-check">Запомнить меня</label>
+                <label for="popup-check">Запомните меня</label>
                 <a href="#">Я забыл пароль!</a>
             </div>
             <button type="submit" class="btn popup-button-in">Войти</button>
@@ -147,6 +156,7 @@
     </div>
 
     <div class="popup-map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="560" height="400"></iframe>
         <button class="btn map-close" title="Закрыть"></button>
     </div>
 </body>

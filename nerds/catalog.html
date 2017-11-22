@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог макетов студии Нёрдс</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
         </div>
 
         <div class="container">
-            <div class="left-filter-block">
+            <div class="filter-side-block">
                 <form action="#" class="filter-side" method="get">
                     <fieldset class="filter-cost">
                         <legend class="filter-name">Стоимость:</legend>
@@ -54,42 +54,42 @@
                         
                     <fieldset class="filter-grid">
                         <legend class="filter-name">Сетка:</legend>
-                        <input type="radio" id="adaptive" checked>
+                        <input type="radio" value="" name="grid-radio" id="adaptive" checked>
                         <label for="adaptive">Адаптивная</label>
-                        <input type="radio" id="fix">
+                        <input type="radio" value="" name="grid-radio" id="fix">
                         <label for="fix">Фиксированная</label>
-                        <input type="radio" id="stretch">
+                        <input type="radio" value="" name="grid-radio" id="stretch">
                         <label for="stretch">Резиновая</label>
                     </fieldset>
 
                     <fieldset class="filter-features">
                         <legend class="filter-name">Особенности:</legend>
-                        <input type="checkbox" name="ch-slider" id="ch-slider" checked>
+                        <input type="checkbox" value="" name="ch-slider" id="ch-slider" checked>
                         <label for="ch-slider">Слайдер</label>
-                        <input type="checkbox" name="ch-features" id="ch-features">
+                        <input type="checkbox" value="" name="ch-features" id="ch-features">
                         <label for="ch-features">Блок преимуществ</label>
-                        <input type="checkbox" name="ch-news" id="ch-news" checked>
+                        <input type="checkbox" value="" name="ch-news" id="ch-news" checked>
                         <label for="ch-news">Новости</label>
-                        <input type="checkbox" name="ch-galery" id="ch-galery">
+                        <input type="checkbox" value="" name="ch-galery" id="ch-galery">
                         <label for="ch-galery">Галерея</label>
-                        <input type="checkbox" name="ch-cart" id="ch-cart">
+                        <input type="checkbox" value="" name="ch-cart" id="ch-cart">
                         <label for="ch-cart">Корзина</label>
                     </fieldset>  
                     <button class="btn filter-btn" type="submit">Показать</button>
                 </form>
             </div>
 
-            <div class="right-grid">
+            <div class="product-side-block">
                 <div class="sorting">
                     <span class="sorting-title">Сортировать:</span>
                     <ul class="sorting-list">
-                        <li class="sorting-li active">По цене:</li>
-                        <li class="sorting-li">По типу:</li>
-                        <li class="sorting-li">По названию:</li>
+                        <li class="sorting-li active"><a>По цене:</a></li>
+                        <li class="sorting-li"><a href="#">По типу:</a></li>
+                        <li class="sorting-li"><a href="#">По названию:</a></li>
                     </ul>
                     <div class="sorting-arrows">
-                        <a class="active"></a>
-                        <a href="#"></a>
+                        <a class="sort-up active"></a>
+                        <a class="sort-down" href="#"></a>
                     </div>
                 </div>
 
@@ -176,7 +176,7 @@
                         </div>                                                                                
                     </div>
 
-                    <div class="products-pag">
+                    <div class="products-pagination">
                         <a class="active">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
@@ -187,7 +187,7 @@
         </div>
         
         <div class="contacts" id="contacts">
-            <div class="map"></div>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="560" height="400"></iframe>
 
             <div class="container">
                 <div class="contacts-card">
