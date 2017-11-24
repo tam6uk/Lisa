@@ -9,7 +9,7 @@
 <body>
 
     <header class="main-header">
-        <div class="container main-container">
+        <div class="container clearfix">
             <a href="index.html">
                 <div class="logo"><img src="img/nerds-logo.png" alt="Нёрдс логотип" width="160" height="65"></div>
             </a>
@@ -31,167 +31,172 @@
                 <h1>Магазин готовых шаблонов</h1>
             </div>
         </div>
-
-        <div class="container">
-            <div class="filter-side-block">
-                <form action="#" class="filter-side" method="get">
-                    <fieldset class="filter-cost">
-                        <legend class="filter-name">Стоимость:</legend>
-                        <div>
-                            <input type="range" min="0" max="5000" step="1">
-                        </div>
-                        <div>
-                            <div class="range-values">
-                                <label for="range-min">От</label>
-                                <input type="text" id="range-min" name="range-min">
+        <div class="main-content">
+            <div class="container clearfix">
+                <div class="filter-side-block">
+                    <form action="#" class="filter-side" method="get">
+                        <fieldset class="filter-cost">
+                            <legend class="filter-name">Стоимость:</legend>
+                            <div>
+                                <input type="range" min="0" max="5000" step="1">
                             </div>
-                            <div class="range-values">
-                                <label for="range-max">До</label>
-                                <input type="text" id="range-max" name="range-max">                           
-                            </div>
-                        </div>                        
-                    </fieldset> 
-                        
-                    <fieldset class="filter-grid">
-                        <legend class="filter-name">Сетка:</legend>
-                        <input type="radio" value="" name="grid-radio" id="adaptive" checked>
-                        <label for="adaptive">Адаптивная</label>
-                        <input type="radio" value="" name="grid-radio" id="fix">
-                        <label for="fix">Фиксированная</label>
-                        <input type="radio" value="" name="grid-radio" id="stretch">
-                        <label for="stretch">Резиновая</label>
-                    </fieldset>
+                            <div>
+                                <div class="range-values">
+                                    <label for="range-min">От</label>
+                                    <input type="text" id="range-min" name="range-min">
+                                </div>
+                                <div class="range-values">
+                                    <label for="range-max">До</label>
+                                    <input type="text" id="range-max" name="range-max">                           
+                                </div>
+                            </div>                        
+                        </fieldset> 
+                            
+                        <fieldset class="filter-grid">
+                            <legend class="filter-name">Сетка:</legend>
+                            <input type="radio" value="" name="grid-radio" id="adaptive" checked>
+                            <label for="adaptive">Адаптивная</label>
+                            <input type="radio" value="" name="grid-radio" id="fix">
+                            <label for="fix">Фиксированная</label>
+                            <input type="radio" value="" name="grid-radio" id="stretch">
+                            <label for="stretch">Резиновая</label>
+                        </fieldset>
 
-                    <fieldset class="filter-features">
-                        <legend class="filter-name">Особенности:</legend>
-                        <input type="checkbox" value="" name="ch-slider" id="ch-slider" checked>
-                        <label for="ch-slider">Слайдер</label>
-                        <input type="checkbox" value="" name="ch-features" id="ch-features">
-                        <label for="ch-features">Блок преимуществ</label>
-                        <input type="checkbox" value="" name="ch-news" id="ch-news" checked>
-                        <label for="ch-news">Новости</label>
-                        <input type="checkbox" value="" name="ch-galery" id="ch-galery">
-                        <label for="ch-galery">Галерея</label>
-                        <input type="checkbox" value="" name="ch-cart" id="ch-cart">
-                        <label for="ch-cart">Корзина</label>
-                    </fieldset>  
-                    <button class="btn filter-btn" type="submit">Показать</button>
-                </form>
-            </div>
-
-            <div class="product-side-block">
-                <div class="sorting">
-                    <span class="sorting-title">Сортировать:</span>
-                    <ul class="sorting-list">
-                        <li class="sorting-li active"><a>По цене:</a></li>
-                        <li class="sorting-li"><a href="#">По типу:</a></li>
-                        <li class="sorting-li"><a href="#">По названию:</a></li>
-                    </ul>
-                    <div class="sorting-arrows">
-                        <a class="sort-up active"></a>
-                        <a class="sort-down" href="#"></a>
-                    </div>
+                        <fieldset class="filter-features">
+                            <legend class="filter-name">Особенности:</legend>
+                            <input type="checkbox" value="" name="ch-slider" id="ch-slider" checked>
+                            <label for="ch-slider">Слайдер</label>
+                            <input type="checkbox" value="" name="ch-features" id="ch-features">
+                            <label for="ch-features">Блок преимуществ</label>
+                            <input type="checkbox" value="" name="ch-news" id="ch-news" checked>
+                            <label for="ch-news">Новости</label>
+                            <input type="checkbox" value="" name="ch-galery" id="ch-galery">
+                            <label for="ch-galery">Галерея</label>
+                            <input type="checkbox" value="" name="ch-cart" id="ch-cart">
+                            <label for="ch-cart">Корзина</label>
+                        </fieldset>  
+                        <button class="btn filter-btn" type="submit">Показать</button>
+                    </form>
                 </div>
 
-                <div class="products-grid">
-                    <div class="grid">
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            
-                            <img src="img/img-sedona.jpg" alt="Макет Sedona" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">Sedona</h2>
-                                <p class="product-description-text">Информационный сайт для туристов</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
+                <div class="product-side-block">
+                    <div class="sorting">
+                        <span class="sorting-title">Сортировать:</span>
+                        <ul class="sorting-list">
+                            <li class="sorting-li active"><a>По цене:</a></li>
+                            <li class="sorting-li"><a href="#">По типу:</a></li>
+                            <li class="sorting-li"><a href="#">По названию:</a></li>
+                        </ul>
+                        <div class="sorting-arrows">
+                            <a class="sort-up active"></a>
+                            <a class="sort-down" href="#"></a>
                         </div>
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="img/img-pink.jpg" alt="Макет Pink-app" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">Pink app</h2>
-                                <p class="product-description-text">Продуктовый лендинг приложения для iOS и Android</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="img/img-barbershop.jpg" alt="Макет Barbershop" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">Barbershop</h2>
-                                <p class="product-description-text">Сайт салоны красоты. Для мужчин, да.</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="img/img-mishka.jpg" alt="Макет Mishka" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">Mishka</h2>
-                                <p class="product-description-text">Интернет-магазин вязаных игрушек</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="img/img-aplus.jpg" alt="Макет A plus" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">A plus</h2>
-                                <p class="product-description-text">Лендинг курсов повышения квалификации</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-card-circle-parent">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="img/img-kvast.jpg" alt="Макет Kvast" width="360" height="576">
-                            <div class="product-description">
-                                <h2 class="product-description-title">Kvast</h2>
-                                <p class="product-description-text">Промо-сайт производителя крафтового кваса</p>
-                                <a href="#" class="btn product-btn">9 900</a>
-                            </div>
-                        </div>                                                                                
                     </div>
 
-                    <div class="products-pagination">
-                        <a class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">Следующая</a>
+                    <div class="products-grid">
+                        <div class="grid">
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                
+                                <img src="img/img-sedona.jpg" alt="Макет Sedona" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Sedona</h2>
+                                    <p class="product-description-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-pink.jpg" alt="Макет Pink-app" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Pink app</h2>
+                                    <p class="product-description-text">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-barbershop.jpg" alt="Макет Barbershop" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Barbershop</h2>
+                                    <p class="product-description-text">Сайт салоны красоты. Для мужчин, да.</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-mishka.jpg" alt="Макет Mishka" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Mishka</h2>
+                                    <p class="product-description-text">Интернет-магазин вязаных игрушек</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-aplus.jpg" alt="Макет A plus" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">A plus</h2>
+                                    <p class="product-description-text">Лендинг курсов повышения квалификации</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-circle-parent">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <img src="img/img-kvast.jpg" alt="Макет Kvast" width="360" height="576">
+                                <div class="product-description">
+                                    <h2 class="product-description-title">Kvast</h2>
+                                    <p class="product-description-text">Промо-сайт производителя крафтового кваса</p>
+                                    <a href="#" class="btn product-btn">9 900</a>
+                                </div>
+                            </div>                                                                                
+                        </div>
+
+                        <div class="products-pagination">
+                            <ul>
+                                <li><a class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">Следующая</a></li>
+                            </ul>                           
+                                                   
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         
         <div class="contacts" id="contacts">
             <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="560" height="400"></iframe>
 
             <div class="container">
                 <div class="contacts-card">
-                    <h3 class="contacts-card">NЁRDS DESIGN STUDIO</h3>
+                    <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
                     <p class="contacts-card-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
                     <p class="contacts-card-phone">тел. +7 (812) 275-75-75</p>
                 </div>
@@ -202,7 +207,7 @@
     </main>
 
    <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-social">
                 <ul>            
                     <li><a href="#">Вконтакте</a></li>
@@ -218,7 +223,7 @@
         </div>
     </footer>
 
-    <div class="popup-write-us">
+    <div class="popup">
         <form class="popup-feedback" action="#" method="post">
             <h2>Напишите нам</h2>
             <button  type="button" class="popup-close"></button>

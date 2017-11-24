@@ -1,54 +1,10 @@
-
-
-html, body, div, span, applet, object, iframe,
-h1,h2,h4,h5,h3, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
- margin: 0;
- padding: 0;
- border: 0;
- font-size: 100%;
- font: inherit;
- vertical-align: baseline; 
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
- display: block;
+html{
+   box-sizing: border-box;
 }
-
-ul {
- list-style: none; 
-}
-
-blockquote, q {
- quotes: none; 
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
- content: '';
- content: none; 
-}
-
-span{
-    display:inline-block;
-}
-
-.clear{
-	clear:both;
-	content: "";
-	display: table;
-} 
 
 body {
 	margin: 0;
@@ -74,43 +30,186 @@ h2 {
 	font-family: "Roboto", sans-serif;
 }
 
-.upper {
-	text-transform: uppercase;
+div {
+	outline: 1px solid red;
 }
 
 .container {
 	width: 1160px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 
-.btn {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 3px;
+.clearfix::after{
+	content: "";
+  	display: table;
+  	clear: both;
 }
 
+.upper {
+	text-transform: uppercase;
+}
 
-.main-container {
+.main-header, 
+.slider-wrapper, 
+.main-heading {
+	background-color: #eeeeee;
+}
+/*-----------------------------
+header
+-----------------------------*/
+header { 
 	outline: 1px solid red;
+} 
+
+.main-header {
 	padding-top: 48px;
 }
 
-.main-header, .slider-wrapper {
-	background-color: #eeeeee;
-}
-
-/********LOGO********/
-
 .logo {
-	width: 160px;
+	float: left;
+	width: 260px;
+	margin-right: 100px;
 }
-
-/********************/
-/**MAIN-NAVIGATION***/
 
 .main-navigation {
-	min-width: 440px;
+	float: left;
+	width: 640px;
 }
 
+.cart {
+	float: right;
+	width: 80px;
+}
 
+.main-heading {
+	padding-bottom: 116px;
+	padding-top: 80px;
+
+}
+.main-heading h1{
+	margin: 0;
+}
+/*-----------------
+offers
+-------------------*/
+
+.offers {
+	margin-top: 80px;
+}
+
+.offer-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin-right: 105px;
+}
+
+.offer-item:last-child {
+	margin-right: 0;	
+}
+
+/*-----------------
+info-block
+----------------*/
+
+.info-block {
+	margin-top: 55px;
+}
+
+.studio-description {
+	float: left;
+	width: 680px;
+}
+
+.studio-numbers {
+	float: right;
+	width: 360px;
+}
+/*
+------------------
+projects
+-----------------*/
+
+.projects {
+	padding: 48px 0;
+}
+.project-img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 110px;
+}
+
+.project-img:last-child {
+	margin-right: 0;
+}
+
+/*------------------
+contacts
+---------------*/
+
+iframe {
+	width: 100%;
+}
+
+.contacts-card {
+	width: 320px;
+	padding: 50px;
+}
+
+/*---------------------
+footer
+-----------------*/
+
+.main-footer {
+	padding: 71px 0;
+}
+.footer-social {
+	float: left;
+	width: 280px;
+	margin-right: 120px;
+}
+
+.footer-text-block {
+	float: left;
+}
+
+/*------------------
+popup
+---------------*/
+
+.popup {
+	width: 960px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 68px;
+	padding-bottom: 85px;
+	margin: auto;
+}
+
+/*----------------*/
+.main-content {
+	margin-top: 60px;
+}
+
+.filter-side-block {
+	float: left;
+	width: 260px;
+}
+
+.product-side-block {
+	float: right;
+	width: 760px;
+}
+
+.product-card {
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+	margin-right: 30px;
+	margin-bottom: 32px;
+}
+
+.product-card:nth-child(2n) {
+	margin-right: 0;
+}
