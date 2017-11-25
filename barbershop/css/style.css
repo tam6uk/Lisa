@@ -124,7 +124,7 @@ index
 .features-item {
 	float: left;
 	width: 300px;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .features-item:last-child {
@@ -191,6 +191,8 @@ popups
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 52px 80px;
+	padding-bottom: 58px;
 }
 
 .popup-map {
