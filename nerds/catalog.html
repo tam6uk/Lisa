@@ -40,12 +40,12 @@
                             <div>
                                 <input type="range" min="0" max="5000" step="1">
                             </div>
-                            <div>
-                                <div class="range-values">
+                            <div class="range-values">
+                                <div class="range-value-from">
                                     <label for="range-min">От</label>
                                     <input type="text" id="range-min" name="range-min">
                                 </div>
-                                <div class="range-values">
+                                <div class="range-value-to">
                                     <label for="range-max">До</label>
                                     <input type="text" id="range-max" name="range-max">                           
                                 </div>
@@ -54,26 +54,50 @@
                             
                         <fieldset class="filter-grid">
                             <legend class="filter-name">Сетка:</legend>
-                            <input type="radio" value="" name="grid-radio" id="adaptive" checked>
-                            <label for="adaptive">Адаптивная</label>
-                            <input type="radio" value="" name="grid-radio" id="fix">
-                            <label for="fix">Фиксированная</label>
-                            <input type="radio" value="" name="grid-radio" id="stretch">
-                            <label for="stretch">Резиновая</label>
+                            <div class="">
+                                <input type="radio" value="" name="grid-radio" id="adaptive" checked>
+                                <label for="adaptive">Адаптивная</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="radio" value="" name="grid-radio" id="fix">
+                                <label for="fix">Фиксированная</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="radio" value="" name="grid-radio" id="stretch">
+                                <label for="stretch">Резиновая</label>
+                            </div>
+                            
                         </fieldset>
 
                         <fieldset class="filter-features">
                             <legend class="filter-name">Особенности:</legend>
-                            <input type="checkbox" value="" name="ch-slider" id="ch-slider" checked>
-                            <label for="ch-slider">Слайдер</label>
-                            <input type="checkbox" value="" name="ch-features" id="ch-features">
-                            <label for="ch-features">Блок преимуществ</label>
-                            <input type="checkbox" value="" name="ch-news" id="ch-news" checked>
-                            <label for="ch-news">Новости</label>
-                            <input type="checkbox" value="" name="ch-galery" id="ch-galery">
-                            <label for="ch-galery">Галерея</label>
-                            <input type="checkbox" value="" name="ch-cart" id="ch-cart">
-                            <label for="ch-cart">Корзина</label>
+                            <div class="">
+                                <input type="checkbox" value="" name="ch-slider" id="ch-slider" checked>
+                                <label for="ch-slider">Слайдер</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="checkbox" value="" name="ch-features" id="ch-features">
+                                <label for="ch-features">Блок преимуществ</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="checkbox" value="" name="ch-news" id="ch-news" checked>
+                                <label for="ch-news">Новости</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="checkbox" value="" name="ch-galery" id="ch-galery">
+                                <label for="ch-galery">Галерея</label>
+                            </div>
+                            
+                            <div class="">
+                                <input type="checkbox" value="" name="ch-cart" id="ch-cart">
+                                <label for="ch-cart">Корзина</label>
+                            </div>
+                            
                         </fieldset>  
                         <button class="btn filter-btn" type="submit">Показать</button>
                     </form>
@@ -93,8 +117,8 @@
                         </div>
                     </div>
 
-                    <div class="products-grid">
-                        <div class="grid">
+                    <div class="products-side-grid">
+                        <div class="products-grid">
                             <div class="product-card">
                                 <div class="product-card-circle-parent">
                                     <span></span>
@@ -104,8 +128,10 @@
                                 
                                 <img src="img/img-sedona.jpg" alt="Макет Sedona" width="360" height="576">
                                 <div class="product-description">
-                                    <h2 class="product-description-title">Sedona</h2>
-                                    <p class="product-description-text">Информационный сайт для туристов</p>
+                                    <a href="#">
+                                        <h2 class="product-description-title">Sedona</h2>
+                                        <p class="product-description-text">Информационный сайт для туристов</p>
+                                    </a>
                                     <a href="#" class="btn product-btn">9 900</a>
                                 </div>
                             </div>

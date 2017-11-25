@@ -1,12 +1,37 @@
+/*------------------- 
+common
+---------------------
+header
+---------------------
+index
+---------------------
+footer
+---------------------
+popups
+---------------------
+item
+---------------------
+shop
+---------------------
+price
+---------------------*/
+
+/*---------------------
+common
+---------------------*/
+
 *, *::before, *::after {
-box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
- box-sizing: border-box;
+ 	box-sizing: border-box;
 }
 
 body {
+	margin: 0;
+	padding: 0;
+ 	border: 0;
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
@@ -26,12 +51,23 @@ h2 {
 	line-height: 30px;
 }
 
+a, .btn {
+	cursor: pointer;
+}
+
 div {
 	outline: 1px solid red;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+.noup {
+	text-transform: none;
+}
+
 .container {
-	width: 940px;
+	width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -41,6 +77,10 @@ div {
   	display: table;
   	clear: both;
 }
+
+/*---------------------
+header
+---------------------*/
 
 header {
 	margin-bottom: 60px; 
@@ -74,6 +114,10 @@ header {
 	margin-bottom: 60px;
 }
 
+/*---------------------
+index
+---------------------*/
+
 .features {
 	margin-bottom: 80px;
 }
@@ -102,9 +146,14 @@ header {
 	float: right;
 }
 
+/*---------------------
+footer
+---------------------*/
+
 footer {
 	outline: 1px solid red;
 }
+
 .main-footer {
 	margin-top: 65px;
 	padding-top: 36px;
@@ -117,10 +166,6 @@ footer {
 	padding-bottom: 44px;
 }
 
-.footer-container {
-
-}
-
 .footer-contacts {
 	width: 320px;
 	float: left;
@@ -128,7 +173,7 @@ footer {
 }
 
 .footer-social {
-	width: 180px;
+	width: 200px;
 	float: left;
 }
 
@@ -136,6 +181,10 @@ footer {
 	width: 140px;
 	float: right;
 }
+
+/*---------------------
+popups
+---------------------*/
 
 .popup-log {
 	width: 460px;
@@ -154,6 +203,7 @@ footer {
 /*---------------------
 item
 ---------------------*/
+
 .breadcrumbs {
 	margin-bottom: 60px; 
 }
@@ -186,8 +236,7 @@ item
 
 /*--------------------
 shop
---------------------
-*/
+----------------------*/
 
 .filter-side-block {
 	float: left;
@@ -201,13 +250,15 @@ shop
 
 .products-grid {
 	margin-bottom: 25px;
+	font-size: 0;
 }
 .product-card {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 17px;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	width: 220px;
+	font-size: 14px;
 }
 
 .product-card:nth-child(3n) {
@@ -226,6 +277,10 @@ price
 .price-table {
 	float: right;
 	width: 460px;
+}
+
+.price-table table {
+	width: 100%;
 }
 
 .about-us-left {
