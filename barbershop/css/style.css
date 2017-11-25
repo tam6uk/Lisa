@@ -137,13 +137,13 @@ index
 }
 
 .index-content-left {
-	width: 380px;
 	float: left;
+	width: 380px;	
 }
 
 .index-content-right {
-	width: 300px;
 	float: right;
+	width: 300px;	
 }
 
 /*---------------------
