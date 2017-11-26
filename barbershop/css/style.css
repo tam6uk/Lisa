@@ -89,7 +89,6 @@ header {
 
 .logo {
 	outline: 1px solid red;
-	display: inline-block;
 	float: left;
 	width: 140px;
 	margin-right: 20px;
@@ -98,20 +97,20 @@ header {
 
 .main-navigation {
 	outline: 1px solid red;
-	width: 630px;
 	float: left;
+	width: 630px;
 	min-height: 70px;
 }
 
 .user-block {
-	width: 100px;
 	float: right;
+	width: 100px;
 }
 
 .index-logo {
-	width: 372px;
+	width: 371px;
 	margin: auto;
-	margin-bottom: 60px;
+	margin-bottom: 76px;
 }
 
 /*---------------------
@@ -167,19 +166,19 @@ footer {
 }
 
 .footer-contacts {
-	width: 320px;
 	float: left;
+	width: 320px;
 	margin-right: 60px;
 }
 
 .footer-social {
-	width: 200px;
 	float: left;
+	width: 200px;	
 }
 
 .footer-copyright {
-	width: 140px;
 	float: right;
+	width: 140px;
 }
 
 /*---------------------
@@ -271,6 +270,9 @@ shop
 price
 -----------------------*/
 
+.we-use-and-price {
+	margin-bottom: 60px;
+}
 .we-use {
 	float: left;
 	width: 240px;
