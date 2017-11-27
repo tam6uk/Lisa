@@ -1,0 +1,255 @@
+/*-------------------
+common
+---------------------
+header
+---------------------
+index
+---------------------
+contacts
+---------------------
+footer
+---------------------
+popup
+---------------------
+catalog
+---------------------*/
+
+/*---------------------
+common
+---------------------*/
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+   box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+ 	border: 0;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	font-family: "Roboto Regular", sans-serif;	
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+}
+
+a, .btn {
+	cursor: pointer;
+}
+
+div {
+	outline: 1px solid red;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.clearfix::after{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.main-header, 
+.slider-wrapper, 
+.main-heading {
+	background-color: #eeeeee;
+}
+
+/*-----------------------------
+header
+-----------------------------*/
+
+header { 
+	outline: 1px solid red;
+} 
+
+.main-header {
+	padding-top: 48px;
+}
+
+.logo {
+	float: left;
+	width: 160px;
+	margin-right: 200px;
+}
+
+.main-navigation {
+	float: left;
+	width: 640px;
+}
+
+.cart {
+	float: right;
+	width: 80px;
+}
+
+.main-heading {
+	padding-bottom: 116px;
+	padding-top: 80px;
+
+}
+.main-heading h1{
+	margin: 0;
+}
+
+/*-----------------
+index
+-------------------*/
+
+.offers {
+	margin-top: 80px;
+	font-size: 0;
+}
+
+.offer-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin-right: 100px;
+	font-size: 16px;
+}
+
+.offer-item:last-child {
+	margin-right: 0;	
+}
+
+.info-block {
+	margin-top: 55px;
+}
+
+.studio-description {
+	float: left;
+	width: 680px;
+}
+
+.studio-numbers {
+	float: right;
+	width: 360px;
+}
+
+.projects {
+	padding: 48px 0;
+	font-size: 0;
+}
+.project-img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.academy-img {
+	margin-left: 30px;
+	margin-right: 96px;
+}
+
+.barbershop-img {
+	margin-right: 106px;
+}
+
+.pink-img {
+	margin-right: 120px;
+}
+
+.project-img:last-child {
+	margin-right: 0;
+}
+
+/*------------------
+contacts
+---------------*/
+
+iframe {
+	width: 100%;
+}
+
+.contacts-card {
+	width: 320px;
+	padding: 50px;
+}
+
+/*---------------------
+footer
+-----------------*/
+
+.main-footer {
+	padding: 71px 0;
+}
+.footer-social {
+	float: left;
+	width: 280px;
+	margin-right: 120px;
+}
+
+.footer-text-block {
+	float: left;
+}
+
+/*------------------
+popup
+--------------------*/
+
+.popup {
+	width: 960px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 68px;
+	padding-bottom: 85px;
+	margin: auto;
+}
+
+/*---------------
+catalog
+-----------------*/
+.main-content {
+	margin-top: 60px;
+}
+
+.filter-side-block {
+	float: left;
+	width: 260px;
+}
+
+.product-side-block {
+	float: right;
+	width: 760px;
+}
+
+.products-grid {
+	font-size: 0px;
+}
+.product-card {
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+	margin-right: 40px;
+	margin-bottom: 32px;
+	font-size: 16px;
+}
+
+.product-card:nth-child(2n) {
+	margin-right: 0;
+}
