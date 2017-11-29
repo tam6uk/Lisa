@@ -72,11 +72,6 @@ div {
 	margin: 0 auto;
 }
 
-.clearfix::after{
-	content: "";
-  	display: table;
-  	clear: both;
-}
 
 /*---------------------
 header
@@ -87,9 +82,12 @@ header {
 	outline: 1px solid red;
 }
 
+.flex-header {
+	display: flex;
+}
+
 .logo {
 	outline: 1px solid red;
-	float: left;
 	width: 140px;
 	margin-right: 20px;
 	margin-left: 20px;
@@ -97,13 +95,18 @@ header {
 
 .main-navigation {
 	outline: 1px solid red;
-	float: left;
 	width: 630px;
-	min-height: 70px;
+}
+
+.main-navigation ul {
+/*	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	list-style: none;*/
 }
 
 .user-block {
-	float: right;
+	margin-left: auto;
 	width: 100px;
 }
 
@@ -119,30 +122,26 @@ index
 
 .features {
 	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
 }
 .features-item {
-	float: left;
 	width: 300px;
-	margin-right: 20px;
-}
-
-.features-item:last-child {
-	margin-right: 0;
 }
 
 .index-content {
+	display: flex;
 	padding: 55px 80px;
 	margin-bottom: 36px;
 }
 
 .index-content-left {
-	float: left;
 	width: 380px;	
 }
 
 .index-content-right {
-	float: right;
 	width: 300px;	
+	margin-left: auto;
 }
 
 /*---------------------
@@ -165,19 +164,21 @@ footer {
 	padding-bottom: 44px;
 }
 
+.flex-footer {
+	display: flex;
+}
+
 .footer-contacts {
-	float: left;
 	width: 320px;
 	margin-right: 60px;
 }
 
 .footer-social {
-	float: left;
-	width: 200px;	
+	width: 180px;
+	margin-right: 240px;
 }
 
 .footer-copyright {
-	float: right;
 	width: 140px;
 }
 
@@ -209,27 +210,26 @@ item
 	margin-bottom: 60px; 
 }
 
+.main-content {
+	display: flex;
+	justify-content: space-between;
+}
+
 .product-gallery {
-	float: left;
 	width: 460px;
 }
 
-.product-gallery-img {
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 0px;
-}
-
-.product-gallery-img:last-child {
-	margin-right: 0;
+.pic-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .main-pic {
-	margin-bottom: 15px;
+
 }
 
 .product-info-block {
-	float: right;
 	width: 400px;
 	padding-left: 10px;
 	padding-top: 20px;
@@ -238,32 +238,22 @@ item
 /*--------------------
 shop
 ----------------------*/
-
 .filter-side-block {
-	float: left;
 	width: 200px;
 }
 
 .product-side-block {
-	float: right;
 	width: 700px;
 }
 
 .products-grid {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 25px;
-	font-size: 0;
 }
 .product-card {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
-	margin-bottom: 20px;
 	width: 220px;
-	font-size: 14px;
-}
-
-.product-card:nth-child(3n) {
-	margin-right: 0px;
 }
 
 /*-----------------------
@@ -271,15 +261,15 @@ price
 -----------------------*/
 
 .we-use-and-price {
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 60px;
 }
 .we-use {
-	float: left;
 	width: 240px;
 }
 
 .price-table {
-	float: right;
 	width: 460px;
 }
 
@@ -287,13 +277,15 @@ price
 	width: 100%;
 }
 
+.about-us-text {
+	display: flex;
+	justify-content: space-between;
+}
 .about-us-left {
-	float: left;
 	width: 400px;
 	margin-right: 80px;
 }
 
 .about-us-right {
-	float: right;
 	width: 400px;
 }
