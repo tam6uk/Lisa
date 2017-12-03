@@ -99,10 +99,7 @@ header {
 }
 
 .main-navigation ul {
-/*	display: flex;
-	justify-content: space-between;
-	padding-left: 0;
-	list-style: none;*/
+
 }
 
 .user-block {
@@ -169,13 +166,13 @@ footer {
 }
 
 .footer-contacts {
-	width: 320px;
-	margin-right: 60px;
+	width: 310px;
+	margin-right: 90px;
 }
 
 .footer-social {
 	width: 180px;
-	margin-right: 240px;
+	margin-right: auto;
 }
 
 .footer-copyright {
@@ -254,6 +251,7 @@ shop
 }
 .product-card {
 	width: 220px;
+	padding-bottom: 20px;
 }
 
 /*-----------------------
