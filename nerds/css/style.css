@@ -98,13 +98,19 @@ header {
 
 .main-navigation {
 	width: 640px;
+	padding-right: 200px;
 }
 
 .main-navigation ul {
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0; 	
 }
+
 .cart {
-	width: 80px;
+	width: 120px;
 	margin-left: auto;
 }
 
@@ -114,7 +120,7 @@ header {
 
 }
 .main-heading h1{
-	margin: 0;
+	
 }
 
 /*-----------------
@@ -127,12 +133,22 @@ index
 
 .flex-offers {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+	padding-right: 80px;
 }
 
 .offer-item {
 	width: 300px;
-	margin-right: 100px;
+}
+
+.img-wrap {
+	width: 300px;
+	height: 146px;
+}
+
+.img-wrap img {
+	width: 100%;
+	height: auto;
 }
 
 .info-block {
@@ -158,29 +174,14 @@ index
 
 .projects {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 48px 0;
+	padding: 42px 30px;
 }
 .project-img {
 
 }
 
-.academy-img {
-	margin-left: 30px;
-	margin-right: 96px;
-}
-
-.barbershop-img {
-	margin-right: 106px;
-}
-
-.pink-img {
-	margin-right: 120px;
-}
-
-.project-img:last-child {
-	margin-right: 0;
-}
 
 /*------------------
 contacts
@@ -208,14 +209,23 @@ footer
 }
 
 .footer-social {
-	width: 280px;
-	margin-right: 120px;
+	width: 260px;
+	margin-right: 140px;
+	display: flex;
+	align-items: center;
 }
 
 .footer-social ul {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
+.footer-social li {
+	margin-right: 6px;
+}
 .footer-text-block {
 
 }
@@ -248,6 +258,28 @@ catalog
 	width: 260px;
 }
 
+form fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.sorting {
+	width: 760px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sorting-list {
+	width: 360px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+}
+
 .product-side-block {
 	width: 760px;
 }
@@ -263,5 +295,11 @@ catalog
 }
 
 .products-pagination ul {
+	display: flex;
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.products-pagination li {
+	margin-right: 6px;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="main-body">
 
     <header class="main-header upper">
       	<div class="container flex-header">
@@ -61,15 +61,15 @@
                             <time datetime="2016-01-18">18 января</time>
                         </li>
                     </ul>
-                    <a class="btn" href="#">Все новости</a>
+                    <a class="btn btn-small" href="#">Все новости</a>
                 </div>
 
                 <div class="index-content-right">
                     <h2 class="index-content-title">Фотогалерея</h2>
                     <div class="gallery">
-                        <figure class="gallery-content">
+                        <div class="gallery-content">
                             <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
-                        </figure>
+                        </div>
                         <div class="btn-row">
                             <button class="btn gallery-prev" type="button">Назад</button>
                             <button class="btn gallery-next" type="button">Вперёд</button>
@@ -96,8 +96,8 @@
                     </div>
                     
                     <div class="btn-row">
-                        <a class="btn" href="#">Как проехать</a>
-                        <a class="btn" href="#">Обратная связь</a>
+                        <a class="btn btn-small" href="#">Как проехать</a>
+                        <a class="btn btn-small" href="#">Обратная связь</a>
                     </div>                   
                 </div>
 
@@ -105,19 +105,19 @@
                     <h2 class="index-content-title">Записаться</h2>
                     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                        <div class="">
+                        <div class="input-field">
                             <label for="date">Дата</label>
                             <input type="text" id="date" name="date" value="" placeholder="08.10.2017">
                         </div>
-                        <div class="">
+                        <div class="input-field">
                             <label for="time">Время</label>
                             <input type="text" id="time" name="time" value="" placeholder="10:00">
                         </div>
-                        <div class="">
+                        <div class="input-field">
                             <label for="name">Ваше имя</label>
                             <input type="text" id="name" name="name" value="" placeholder="Борода">
                         </div>
-                        <div class="">
+                        <div class="input-field">
                             <label for="phone">Телефон</label>
                             <input type="tel"  id="phone" name="phone" value="" placeholder="+7 123 456-78-90">
                         </div>

@@ -31,7 +31,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
- 	border: 0;
+	min-width: 960;
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
@@ -62,6 +62,7 @@ div {
 .upper {
 	text-transform: uppercase;
 }
+
 .noup {
 	text-transform: none;
 }
@@ -77,7 +78,7 @@ div {
 header
 ---------------------*/
 
-header {
+.main-header {
 	margin-bottom: 60px; 
 	outline: 1px solid red;
 }
@@ -87,7 +88,7 @@ header {
 }
 
 .logo {
-	outline: 1px solid red;
+	padding-top: 20px;
 	width: 140px;
 	margin-right: 20px;
 	margin-left: 20px;
@@ -99,7 +100,19 @@ header {
 }
 
 .main-navigation ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
 
+.main-navigation a {
+	display: block;
+	padding: 20px;
+}
+
+.main-navigation a:hover {
+	background-color: #ccc;;
 }
 
 .user-block {
@@ -108,9 +121,9 @@ header {
 }
 
 .index-logo {
-	width: 371px;
-	margin: auto;
-	margin-bottom: 76px;
+	width: 372px;
+	margin: 0 auto;
+	margin-bottom: 74px;
 }
 
 /*---------------------
@@ -128,6 +141,7 @@ index
 
 .index-content {
 	display: flex;
+	justify-content: space-between;
 	padding: 55px 80px;
 	margin-bottom: 36px;
 }
@@ -138,9 +152,41 @@ index
 
 .index-content-right {
 	width: 300px;	
-	margin-left: auto;
 }
 
+.gallery-content {
+	width: 286px;
+	height: 164px;
+  	border: 7px solid #ffffff;
+  	box-sizing: content-box;
+  	margin-bottom: 37px;
+}
+
+.gallery-content img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.input-field {
+	width: 140px;
+	margin-bottom: 12px;
+}
+
+.appointment-form input {
+  width: 140px;
+}
 /*---------------------
 footer
 ---------------------*/
@@ -175,6 +221,14 @@ footer {
 	margin-right: auto;
 }
 
+.footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .footer-copyright {
 	width: 140px;
 }
@@ -207,6 +261,21 @@ item
 	margin-bottom: 60px; 
 }
 
+.breadcrumbs ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumbs li {
+	padding-left: 40px;
+}
+
+.breadcrumbs li:first-child {
+	padding-left: 0;
+}
+
 .main-content {
 	display: flex;
 	justify-content: space-between;
@@ -214,21 +283,36 @@ item
 
 .product-gallery {
 	width: 460px;
+	overflow: hidden;	
 }
 
 .pic-row {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .main-pic {
+	width: 460px;
+	height: 498px;
+}
 
+.small-pic {
+	width: 140px;
+	height: 149px;
+}
+
+.product-gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.product-gallery-img {
+	overflow: hidden;
 }
 
 .product-info-block {
-	width: 400px;
-	padding-left: 10px;
+	width: 390px;
 	padding-top: 20px;
 }
 
@@ -237,6 +321,12 @@ shop
 ----------------------*/
 .filter-side-block {
 	width: 200px;
+}
+
+form fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
 }
 
 .product-side-block {
@@ -252,8 +342,33 @@ shop
 .product-card {
 	width: 220px;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
+.product-shop-img {
+	width: 220px;
+	height: 165px;
+}
+
+.product-shop-img img{
+	width: 100%;
+	height: auto;
+}
+
+.products-pagination {
+	
+}
+
+.products-pagination ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.products-pagination li {
+	margin-right: 6px;
+}
 /*-----------------------
 price
 -----------------------*/
@@ -281,7 +396,6 @@ price
 }
 .about-us-left {
 	width: 400px;
-	margin-right: 80px;
 }
 
 .about-us-right {
