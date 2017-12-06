@@ -9,10 +9,8 @@
 <body>
 
     <header class="main-header">
-        <div class="container clearfix">
-            <a href="index.html">
-                <div class="logo"><img src="img/nerds-logo.png" alt="Нёрдс логотип" width="160" height="65"></div>
-            </a>
+        <div class="container flex-header">
+            <a href="index.html" class="logo"><img src="img/nerds-logo.png" alt="Нёрдс логотип" width="160" height="65"></a>
             <nav class="main-navigation upper">  
                 <ul>
                     <li><a href="#">Студия</a></li>
@@ -21,18 +19,16 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>  
             </nav>
-            <div class="cart"><a href="#">Корзина</a></div>
+            <div class="cart upper"><a href="#">Корзина</a></div>
         </div>
     </header>
     
     <main>
         <div class="main-heading">
-            <div class="container">
-                <h1>Магазин готовых шаблонов</h1>
-            </div>
+                <h1>Магазин готовых шаблонов</h1>            
         </div>
         <div class="main-content">
-            <div class="container clearfix">
+            <div class="container flex-main">
                 <div class="filter-side-block">
                     <form action="#" class="filter-side" method="get">
                         <fieldset class="filter-cost">
@@ -128,10 +124,8 @@
                                 
                                 <img src="img/img-sedona.jpg" alt="Макет Sedona" width="360" height="576">
                                 <div class="product-description">
-                                    <a href="#">
-                                        <h2 class="product-description-title">Sedona</h2>
-                                        <p class="product-description-text">Информационный сайт для туристов</p>
-                                    </a>
+                                    <h2 class="product-description-title">Sedona</h2>
+                                    <p class="product-description-text">Информационный сайт для туристов</p>
                                     <a href="#" class="btn product-btn">9 900</a>
                                 </div>
                             </div>
@@ -207,7 +201,7 @@
                                 <li><a class="active">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
-                                <li><a href="#">Следующая</a></li>
+                                <li><a href="#" class="btn-next">Следующая</a></li>
                             </ul>                           
                                                    
                         </div>
@@ -217,23 +211,20 @@
         </div>
         
         
-        <div class="contacts" id="contacts">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="560" height="400"></iframe>
-
-            <div class="container">
-                <div class="contacts-card">
-                    <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-                    <p class="contacts-card-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-                    <p class="contacts-card-phone">тел. +7 (812) 275-75-75</p>
-                </div>
+        <div class="contacts">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="100%" height="416"></iframe>
+            <div class="contacts-card">
+                <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+                <p class="contacts-card-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+                <p class="contacts-card-phone">тел. +7 (812) 275-75-75</p>
                 <a class="btn" href="#">Напишите нам</a>
-            </div>
-        </div>  
+            </div>                      
+        </div>
 
     </main>
 
    <footer class="main-footer">
-        <div class="container clearfix">
+        <div class="container flex-footer">
             <div class="footer-social">
                 <ul>            
                     <li><a href="#">Вконтакте</a></li>
