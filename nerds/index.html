@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Nёrds - студия математически выверенного дизайна</title> 
+	<title>Nёrds - студия математически выверенного дизайна</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -27,33 +28,44 @@
         <div class="slider-wrapper">
             <div class="container">
                 <div class="slider">
-                    <div class="slider-controls">
+                    <!-- <div class="slider-controls">
                         <label for="slider-radio-1">1</label>
                         <input type="radio" class="active" id="slider-radio-1" value="" name="slider-radio" checked>
                         <label for="slider-radio-2">2</label>
                         <input type="radio" class="active" id="slider-radio-2" value="" name="slider-radio">
                         <label for="slider-radio-3">3</label>
                         <input type="radio" class="active" id="slider-radio-3" value="" name="slider-radio">
-                    </div>
+                    </div> -->
                     
                     <div class="slides">
                         <div class="slider-item">
-                            <p class="slider-title">Долго, доpoго, скрупулезно</p>
-                            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                            <a href="#" class="btn slider-btn">Узнать больше</a>
+                            <div class="slide-info">
+                                <p class="slider-title">Долго, доpoго, скрупулезно.</p>
+                                <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                                <a href="#" class="btn slider-btn">Узнать больше</a>
+                            </div>
+                            
+                            <div class="slide-img">
+                                <img src="img/slide1.png">
+                            </div>
+                            
                         </div>
 
-                        <div class="slider-item">
-                            <p class="slider-title">Любим математику как никто другой</p>
-                            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                            <a href="#" class="btn slider-btn">Узнать больше</a>
-                        </div>
+                        <!-- <div class="slider-item">
+                                <div class="slide-info">
+                                    <p class="slider-title">Любим математику как никто другой</p>
+                                    <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                                    <a href="#" class="btn slider-btn">Узнать больше</a>
+                                </div>
+                            </div>
                 
-                        <div class="slider-item">
-                            <p class="slider-title">Только ночь, только хардкор</p>
-                            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                            <a href="#" class="btn slider-btn">Узнать больше</a>
-                        </div>
+                            <div class="slider-item">
+                                <div class="slide-info">
+                                    <p class="slider-title">Только ночь, только хардкор</p>
+                                    <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                                    <a href="#" class="btn slider-btn">Узнать больше</a>
+                                </div>
+                            </div> -->
                     </div>
                     
                 </div>
@@ -64,7 +76,7 @@
             <div class="container flex-offers">
                 <div class="offer-item">
                     <div class="img-wrap"><img src="img/illustration-1.jpg" alt="Мы делаем веб-сайты" width="300" height="146"></div>
-                    <a href="#">
+                    <a href="#" class="offer-heading">
                         <h2 class="offer-item-title">Веб-сайты</h2>
                         <p class="offer-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     </a>
@@ -73,7 +85,7 @@
             
                 <div class="offer-item">
                     <div class="img-wrap"><img src="img/illustration-2.jpg" alt="Мы делаем мобильные приложения" width="300" height="146"></div>
-                    <a href="#">
+                    <a href="#" class="offer-heading">
                         <h2 class="offer-item-title">Приложения</h2>    
                         <p class="offer-text">Покорите топ-10 приложений в AppStore и Google Play</p>
                     </a>
@@ -82,7 +94,7 @@
                
                 <div class="offer-item">
                     <div class="img-wrap"><img src="img/illustration-3.jpg" alt="Мы делаем презентации" width="300" height="146"></div>
-                    <a href="#">
+                    <a href="#" class="offer-heading">
                         <h2 class="offer-item-title">Презентации</h2>
                         <p class="offer-text">Вы даже не подозреваете, насколько вы изумительны!</p>
                     </a>
@@ -95,7 +107,7 @@
             <div class="container flex-info">
                 <div class="studio-description">
                     <p class="info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p class="info-sub-title">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                     <span class="info-list-heading">Выполняем заказы на разработку:</span>
                     <ul class="info-list">
                         <li class="info-li">Веб-сайтов любой сложности</li>
@@ -105,18 +117,20 @@
                 </div>
                 
                 <div class="studio-numbers">
-                    <img src="img/nerds-illustration.jpg" alt="Любим точность во всем" class="info-pic">
+                    <div class="info-img">
+                        <img src="img/nerds-illustration.jpg" alt="Любим точность во всем" class="info-pic">
+                    </div>
                     <span class="info-list-heading">С 2004 года любим точность во всем:</span>
                     <ul class="info-side-list">
-                        <li class="info-li">
+                        <li class="info-side-li">
                             <b class="info-numbers">146<sup>%</sup></b>
                             <p class="info-text">Уровень самоотдачи</p>
                         </li>
-                        <li class="info-li">
+                        <li class="info-side-li">
                             <b class="info-numbers">100<sup>%</sup></b>
                             <p class="info-text">Соблюдение сроков</p>
                         </li>
-                        <li class="info-li">
+                        <li class="info-side-li">
                             <b class="info-numbers">50<sup>%</sup></b>
                             <p class="info-text">Минимальная предоплата</p>
                         </li>
@@ -134,13 +148,16 @@
         </div>
           
         <div class="contacts">
-        	<iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="100%" height="416"></iframe>
-        	<div class="contacts-card">
-        		<h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-        		<p class="contacts-card-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-        		<p class="contacts-card-phone">тел. +7 (812) 275-75-75</p>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="100%" height="416"></iframe>
+            </div>
+        	
+            <div class="contacts-card">
+                <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+                <p class="contacts-card-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+                <p class="contacts-card-phone">тел. +7 (812) 275-75-75</p>
                 <a class="btn" href="#">Напишите нам</a>
-        	</div>                    	
+            </div>  
         </div> 
 
     </main>
@@ -149,9 +166,9 @@
     	<div class="container flex-footer">
             <div class="footer-social">
                 <ul>
-                    <li><a class="social-icon social-icon-vk" href="#">Вконтакте</a></li>
-                    <li><a class="social-icon social-icon-fb" href="#">Фейсбук</a></li>
-                    <li><a class="social-icon social-icon-in" href="#">Инстаграм</a></li>
+                    <li><a class="social-icon social-icon-vk" href="#"></a></li>
+                    <li><a class="social-icon social-icon-fb" href="#"></a></li>
+                    <li><a class="social-icon social-icon-in" href="#"></a></li>
                 </ul> 				
     		</div>
 
@@ -180,7 +197,7 @@
             
     		<div class="for-message">
                 <label for="message">Текст письма:</label>
-                <textarea class="popup-message" name="message" id="message" placeholder="В свободной форме"></textarea> 
+                <textarea class="popup-message" name="message" id="message" placeholder="В свободной форме" rows="5"></textarea> 
             </div>
 
     		<button class="btn popup-btn" type="submit">Отправить</button>

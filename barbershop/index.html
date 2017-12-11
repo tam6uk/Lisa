@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,8 +72,8 @@
                             <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
                         </div>
                         <div class="btn-row">
-                            <button class="btn gallery-prev" type="button">Назад</button>
-                            <button class="btn gallery-next" type="button">Вперёд</button>
+                            <button class="btn btn-small gallery-prev" type="button">Назад</button>
+                            <button class="btn btn-small gallery-next" type="button">Вперёд</button>
                         </div>
                         
                     </div>
@@ -103,7 +104,7 @@
 
                 <div class="index-content-right">
                     <h2 class="index-content-title">Записаться</h2>
-                    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                    <p class="pre-form-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                         <div class="input-field">
                             <label for="date">Дата</label>
@@ -140,14 +141,14 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#"></a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
           		<p>Разработано:</p>
-          		<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          		<a class="btn btn-small" href="https://htmlacademy.ru">HTML Academy</a>
         	</div>
       	</div>
     </footer>
@@ -157,8 +158,12 @@
         <h2 class="popup-header">Личный кабинет</h2>
         <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
         <form class="popup-form" action="#" method="get">
-            <input type="text" class="popup-login" placeholder="Логин">
-            <input type="password" class="popup-password" placeholder="Пароль">
+            <div class="popup-login">
+                <input type="text" placeholder="Логин">
+            </div>
+            <div class="popup-password">
+                <input type="text" placeholder="Пароль">
+            </div>
             <div class="help-pass">
                 <input type="checkbox" class="popup-check" id="popup-check">
                 <label for="popup-check">Запомните меня</label>
