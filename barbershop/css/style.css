@@ -60,6 +60,11 @@ h2 {
 	line-height: 30px;
 }
 
+p, ul {
+	margin: 0;
+	padding: 0;
+} 
+
 a, .btn {
 	cursor: pointer;
 }
@@ -84,34 +89,34 @@ button {
 .btn {
 	display: inline-block;
 	vertical-align: top;
-  	text-align: center;
-  	padding: 10px 0;
+	text-align: center;
+	padding: 10px 0;
 	background-color: #000;
 	color: #fff;
 	border: none;
 	cursor: pointer;
 	text-transform: uppercase;
-  	text-decoration: none;
-  	font-family: "PT Sans Narrow", "Arial", sans-serif;
-  	font-weight: bold;
-  	font-size: 14px;
+	text-decoration: none;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
 	line-height: 24px;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #663d15;
+	ackground-color: #663d15;
 }
 
 .btn.disabled,
 .btn:disabled {
-  cursor: default;
-  opacity: 0.5;
+	ursor: default;
+	pacity: 0.5;
 }
 
 .btn.disabled:hover,
 .btn:disabled:hover {
-  background-color: #000000;
+	ackground-color: #000000;
 }
 
 .btn-small {
@@ -187,10 +192,6 @@ header
 	background-color: #fff;
 }
 
-.main-navigation a:hover {
-	background-color: #242424;
-}
-
 .main-navigation a.active::after,
 .main-navigation a:active::after{
 	display: block;
@@ -199,6 +200,12 @@ header
 .main-navigation a.active:hover {
 	background-color: #000;
 	cursor: default;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active.inner:hover {
+	background-color: #242424;
+	cursor: pointer;
 }
 
 .user-block {
@@ -256,7 +263,7 @@ index
 
 .features-item p {
 	margin: 10px;
-  	margin-bottom: 0;
+	margin-bottom: 0;
 } 
 
 .features-name {
@@ -274,12 +281,12 @@ index
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
-  	display: block;
-  	margin-left: -10px;
-  	width: 20px;
-  	height: 20px;
-  	background-color: #ffffff;
-  	transform: rotate(45deg);
+	display: block;
+	margin-left: -10px;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	transform: rotate(45deg);
 }
 
 .index-content {
@@ -336,14 +343,14 @@ index
 .gallery-content {
 	width: 286px;
 	height: 164px;
-  	border: 7px solid #ffffff;
-  	box-sizing: content-box;
-  	margin-bottom: 37px;
+	border: 7px solid #ffffff;
+	box-sizing: content-box;
+	margin-bottom: 37px;
 }
 
 .gallery-content img {
-  width: 100%;
-  height: auto;
+	idth: 100%;
+	eight: auto;
 }
 
 .btn-row {
@@ -382,11 +389,11 @@ index
 
 .appointment-form input {
 	background-color: #f9f6f3;
-  	border: 2px solid #000;
-  	padding: 12px;
-  	width: 140px;
-  	margin-top: 0px;
-  	outline: none;
+	border: 2px solid #000;
+	padding: 12px;
+	width: 140px;
+	margin-top: 0px;
+	outline: none;
 }
 
 .appointment-form input:focus {
@@ -416,13 +423,13 @@ footer {
 
 .main-footer {
 	margin-top: 64px;
-	padding-top: 44px;
+	padding-top: 59px;
 	padding-bottom: 44px;
 }
 
 .main-footer-other {
 	margin-top: 48px;
-	padding-top: 44px;
+	padding-top: 57px;
 	padding-bottom: 44px;
 	box-shadow: inset 0px 20px 30px 0px #000;
 }
@@ -447,11 +454,10 @@ footer {
 }
 
 .footer-social ul {
+	margin-top: 16px;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 
 .footer-social li {
@@ -486,11 +492,11 @@ footer {
 }
 
 .footer-copyright .btn.btn-small {
+	margin-top: 14px;
 	background-color: #000;
 }
 
 .footer-copyright .btn.btn-small:hover {
-
 	filter: invert(100%);
 }
 
@@ -521,11 +527,22 @@ popups
 .popup-close {
 	position: absolute;
 	top:5px;
-	right: -20px;
+	right: -24px;
+	width: 19px;
+	height: 19px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	background-image: url("../img/sprite.png");
+	background-position: -34px -28px;
+	cursor: pointer;
+}
+.popup-close:hover {
+	opacity: 0.8;
 }
 
 .popup-header {
-	margin: 0;
+	margin-bottom: 20px;
 }
 
 .popup-form {
@@ -533,13 +550,16 @@ popups
 	flex-direction: column;
 }
 
+.popup-text {
+	margin-bottom: 10px;
+}
 .popup-form input[type="text"], 
 .popup-form input[type="password"]{
 	width: 100%;
 	margin-bottom: 8px;
 	padding: 12px;
 	border: 2px solid #000;	
-  	color: #000;
+	color: #000;
 }
 
 .popup-form input:focus {
@@ -602,14 +622,12 @@ item
 ---------------------*/
 
 .breadcrumbs {
-	margin-bottom: 46px; 
+	margin-bottom: 50px; 
 }
 
 .breadcrumbs ul {
 	display: flex;
 	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 
 .breadcrumbs li {
@@ -658,11 +676,12 @@ item
 .main-content {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 8px;
+	padding-bottom: 2px;
 }
 
 .product-gallery {
 	width: 460px;	
+	padding-bottom: 2px;
 }
 
 .pic-row {
@@ -693,7 +712,7 @@ item
 
 .product-info-block {
 	width: 390px;
-	padding-top: 20px;
+	padding-top: 23px;
 }
 
 .product-description .price-and-buy {
@@ -755,11 +774,12 @@ shop
 ----------------------*/
 .filter-side-block {
 	width: 200px;
+	margin-top: -4px;
 }
 
 .filter-side fieldset {
 	margin: 0;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 	padding: 0;
 	border: none;
 	display: flex;
@@ -899,7 +919,7 @@ input:disabled:checked + label::after {
 
 .product-card h2 {
 	padding-left: 16px;
-	padding-top: 4px;
+	margin-top: 14px;
 	margin-bottom: 13px;
 	font-size: 14px;
 	line-height: 18px;
@@ -921,7 +941,7 @@ input:disabled:checked + label::after {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 110px;
+	width: 109px;
 	background-color: #e5e5e5;
 	color: #000;
 }
@@ -971,6 +991,8 @@ price
 }
 .heading-classic {
 	position: relative;
+	margin-bottom: 50px;
+	margin-top: -4px;
 	font-size: 48px;
 	line-height: 48px;
 	text-align: center;
@@ -1069,11 +1091,12 @@ price
 }
 
 .about-us-title {
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 }
 .about-us-text {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 28px;
 }
 .about-us-left {
 	width: 400px;
