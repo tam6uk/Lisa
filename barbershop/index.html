@@ -72,7 +72,7 @@
                             <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
                         </div>
                         <div class="btn-row">
-                            <button class="btn btn-small gallery-prev" type="button">Назад</button>
+                            <button class="btn btn-small gallery-prev disabled" type="button">Назад</button>
                             <button class="btn btn-small gallery-next" type="button">Вперёд</button>
                         </div>
                         
@@ -153,6 +153,8 @@
       	</div>
     </footer>
 
+    <div class="overlay"></div>
+
     <div class="popup-log upper">
         <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
         <h2 class="popup-header">Личный кабинет</h2>
@@ -175,44 +177,10 @@
 
     <div class="popup-map">
         <button id="js-popmap-close" class="popup-close" title="Закрыть"></button>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="100%" height="600"></iframe>       
+        <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079"></iframe>       
     </div>
-    <script>
-        var link_log = document.querySelector(".login");
-        var link_map = document.querySelector(".map-open");
-        var link_log_close = document.querySelector("#js-poplog-close");
-        var link_map_close = document.querySelector("#js-popmap-close");
-        var popup_log = document.querySelector(".popup-log");
-        var popup_map = document.querySelector(".popup-map");
 
-        link_log.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup_log.classList.add("popup-show");
-        });
+    <script src="js/script.js"></script>
 
-        link_map.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup_map.classList.add("popup-show");
-        });
-
-        link_log_close.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup_log.classList.remove("popup-show");
-        });
-
-        link_map_close.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup_map.classList.remove("popup-show");
-        });
-
-        window.addEventListener("keydown", function(event) {
-            if (event.keyCode === 27) {
-                popup_log.classList.remove("popup-show");
-                popup_map.classList.remove("popup-show");
-            }               
-        })
-
-
-    </script>
 </body>
 </html>

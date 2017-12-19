@@ -71,10 +71,6 @@ a, .btn {
 	cursor: pointer;
 }
 
-div {
-	/*outline: 1px solid red;*/
-}
-
 .upper {
 	text-transform: uppercase;
 }
@@ -88,6 +84,7 @@ div {
 button {
 	outline: none;
 }
+
 .btn {
 	display: inline-block;
 	vertical-align: top;
@@ -118,12 +115,14 @@ button {
 
 .btn.disabled:hover,
 .btn:disabled:hover {
-	background-color: #000000;
+	cursor: default;
+	opacity: 0.5;
 }
 
 .btn-small {
 	width: 140px;
 }
+
 /*---------------------
 header
 ---------------------*/
@@ -164,6 +163,7 @@ header
 	width: 100%;
 	height: auto;
 }
+
 .main-navigation {
 	width: 630px;
 }
@@ -172,6 +172,7 @@ header
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0; 
@@ -265,6 +266,7 @@ index
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
+
 .features-item {
 	width: 300px;
 	text-align: center;
@@ -365,8 +367,8 @@ index
 }
 
 .gallery-content img {
-	idth: 100%;
-	eight: auto;
+	width: 100%;
+	height: auto;
 }
 
 .btn-row {
@@ -424,6 +426,7 @@ index
 .appointment-form input:focus {
 	border-color: #663d15;
 }
+
 .appointment-form label {
 	display: block;
 	padding-left: 16px; 
@@ -538,6 +541,16 @@ footer {
 popups
 ---------------------*/
 
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
 .popup-log {
 	position: fixed;
 	top: 120px;
@@ -582,7 +595,7 @@ popups
 	position: absolute;
 	top:5px;
 	right: -29px;
-	width: 18px;
+	width: 19px;
 	height: 19px;
 	border: none;
 	outline: none;
@@ -638,8 +651,8 @@ popups
 }
 
 .popup-login::before {
-	position: absolute;
 	content: "";
+	position: absolute;
 	right: 15px;
 	top:15px;
 	height: 13px;
@@ -653,8 +666,8 @@ popups
 }
 
 .popup-password::before {
-	position: absolute;
 	content: "";
+	position: absolute;
 	right: 15px;
 	top:14px;
 	height: 15px;
@@ -711,8 +724,8 @@ item
 }
 
 .breadcrumbs li:before {
-	position: absolute;
 	content: "";
+	position: absolute;	
 	background-color: #000;
 	width: 7px;
 	height: 7px;
@@ -743,11 +756,6 @@ item
 .breadcrumbs a.active {
 	color: #ccc;
 	cursor: default;
-}
-
-.breadcrumbs a:active:hover, 
-.breadcrumbs a.active:hover {
-	
 }
 
 .main-content {
@@ -853,8 +861,8 @@ item
 }
 
 .product-inside li:before{
-	position: absolute;
 	content: "";
+	position: absolute;
 	background-color: #000;
 	width: 7px;
 	height: 7px;
@@ -867,11 +875,10 @@ item
 	
 
 
-
-
 /*--------------------
 shop
 ----------------------*/
+
 .filter-side-block {
 	width: 200px;
 	margin-top: -4px;
@@ -1227,6 +1234,7 @@ price
 	line-height: 30px;
 	margin-bottom: 34px;
 }
+
 .price-table .price-text{
 	text-align: center;
 }
@@ -1234,6 +1242,7 @@ price
 .about-us-title {
 	margin-bottom: 30px;
 }
+
 .about-us-text {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1243,6 +1252,7 @@ price
 	        justify-content: space-between;
 	padding-bottom: 9px;
 }
+
 .about-us-left {
 	width: 400px;
 }
