@@ -566,6 +566,8 @@ index
 
 .project-img {
 	position: relative;
+	display: block;
+	overflow: hidden;	
 	padding: 0 48px;
 }
 
@@ -621,6 +623,7 @@ iframe {
 
 .contacts-container {
 	position: absolute;
+	height: 0;
 	width: 1200px;
 	top: 0;	
 	left: 50%;
@@ -636,6 +639,9 @@ iframe {
 	left: 680px;
 }
 .contacts-card {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 320px;
 	padding: 52px 50px;
 	padding-bottom: 46px;
