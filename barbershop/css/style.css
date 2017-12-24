@@ -100,6 +100,7 @@ button {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
+	transition: 0.2s;
 }
 
 .btn:hover,
@@ -364,6 +365,11 @@ index
 	-webkit-box-sizing: content-box;
 	        box-sizing: content-box;
 	margin-bottom: 37px;
+	display: none;
+}
+
+.gallery-content:first-child {
+	display: block;
 }
 
 .gallery-content img {
@@ -552,15 +558,12 @@ popups
 
 .popup-log {
 	position: fixed;
+	display: none;
 	top: 120px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	left: calc(50% - 230px);
 	width: 460px;
 	padding: 50px 80px;
 	padding-bottom: 58px;
-	display: none;
 	background-color: #f8f5f2;
 	background-image: url("../img/cards-bg.jpg");
 	color: #000;
@@ -700,7 +703,17 @@ popups
 
 .popup-show {
 	display: block;
+	animation: bounce 0.5s;
 }
+
+.popup-error {
+	animation: shake 0.5s;
+}
+
+.show {
+	display: block;
+}
+
 
 /*---------------------
 item
@@ -1259,4 +1272,31 @@ price
 .about-us-right {
 	width: 460px;
 	padding-right: 80px;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }

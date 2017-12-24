@@ -68,11 +68,26 @@
                 <div class="index-content-right">
                     <h2 class="index-content-title">Фотогалерея</h2>
                     <div class="gallery">
-                        <div class="gallery-content">
-                            <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
+                        <div class="gallery-imgs">
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic1.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic2.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic3.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic4.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
                         </div>
+                        
                         <div class="btn-row">
-                            <button class="btn btn-small gallery-prev disabled" type="button">Назад</button>
+                            <button class="btn btn-small gallery-prev" type="button">Назад</button>
                             <button class="btn btn-small gallery-next" type="button">Вперёд</button>
                         </div>
                         
@@ -97,7 +112,7 @@
                     </div>
                     
                     <div class="btn-row">
-                        <a class="btn btn-small" href="#">Как проехать</a>
+                        <a class="btn btn-small js-map-open" href="#">Как проехать</a>
                         <a class="btn btn-small" href="#">Обратная связь</a>
                     </div>                   
                 </div>
@@ -135,7 +150,7 @@
         	<div class="footer-contacts">
           		<p>Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a class="map-open" href="#">Как нас найти?</a><br>
+                <a href="#">Как нас найти?</a><br>
                 Телефон: +7 (812) 666-02-66</p>
         	</div>
         	<div class="footer-social">
@@ -159,25 +174,25 @@
         <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
         <h2 class="popup-header">Личный кабинет</h2>
         <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
-        <form class="popup-form" action="#" method="get">
+        <form class="popup-form" action="https://echo.htmlacademy.ru"  method="get">
             <div class="popup-login">
-                <input type="text" placeholder="Логин">
+                <input type="text" placeholder="Логин" name="login">
             </div>
             <div class="popup-password">
-                <input type="text" placeholder="Пароль">
+                <input type="text" placeholder="Пароль" name="password">
             </div>
             <div class="help-pass">
                 <input type="checkbox" class="popup-check" id="popup-check">
                 <label for="popup-check">Запомните меня</label>
                 <a href="#">Я забыл пароль!</a>
             </div>
-            <button type="button" class="btn popup-button-in">Войти</button>
+            <button type="submit" class="btn popup-button-in">Войти</button>
       </form>
     </div>
 
     <div class="popup-map">
         <button id="js-popmap-close" class="popup-close" title="Закрыть"></button>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079"></iframe>       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616030944!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1514117193834" width="600" height="450" frameborder="0" allowfullscreen></iframe>      
     </div>
 
     <script src="js/script.js"></script>
