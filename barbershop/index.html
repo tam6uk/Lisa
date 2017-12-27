@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -67,12 +68,27 @@
                 <div class="index-content-right">
                     <h2 class="index-content-title">Фотогалерея</h2>
                     <div class="gallery">
-                        <div class="gallery-content">
-                            <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
+                        <div class="gallery-imgs">
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic1.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic2.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic3.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
+                            <div class="gallery-content">
+                                <img src="img/index-gallery-pic4.jpg" width="286" height="164" alt="В нашей студии">
+                            </div>
                         </div>
+                        
                         <div class="btn-row">
-                            <button class="btn gallery-prev" type="button">Назад</button>
-                            <button class="btn gallery-next" type="button">Вперёд</button>
+                            <button class="btn btn-small gallery-prev" type="button">Назад</button>
+                            <button class="btn btn-small gallery-next" type="button">Вперёд</button>
                         </div>
                         
                     </div>
@@ -96,14 +112,14 @@
                     </div>
                     
                     <div class="btn-row">
-                        <a class="btn btn-small" href="#">Как проехать</a>
+                        <a class="btn btn-small js-map-open" href="#">Как проехать</a>
                         <a class="btn btn-small" href="#">Обратная связь</a>
                     </div>                   
                 </div>
 
                 <div class="index-content-right">
                     <h2 class="index-content-title">Записаться</h2>
-                    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                    <p class="pre-form-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                         <div class="input-field">
                             <label for="date">Дата</label>
@@ -140,25 +156,31 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#"></a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
           		<p>Разработано:</p>
-          		<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          		<a class="btn btn-small" href="https://htmlacademy.ru">HTML Academy</a>
         	</div>
       	</div>
     </footer>
 
+    <div class="overlay"></div>
+
     <div class="popup-log upper">
-        <button class="popup-close" title="Закрыть"></button>
+        <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
         <h2 class="popup-header">Личный кабинет</h2>
         <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
-        <form class="popup-form" action="#" method="get">
-            <input type="text" class="popup-login" placeholder="Логин">
-            <input type="password" class="popup-password" placeholder="Пароль">
+        <form class="popup-form" action="https://echo.htmlacademy.ru"  method="get">
+            <div class="popup-login">
+                <input type="text" placeholder="Логин" name="login">
+            </div>
+            <div class="popup-password">
+                <input type="text" placeholder="Пароль" name="password">
+            </div>
             <div class="help-pass">
                 <input type="checkbox" class="popup-check" id="popup-check">
                 <label for="popup-check">Запомните меня</label>
@@ -169,8 +191,11 @@
     </div>
 
     <div class="popup-map">
-        <button class="popup-close" title="Закрыть"></button>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CVgJR079" width="775" height="400"></iframe>       
+        <button id="js-popmap-close" class="popup-close" title="Закрыть"></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616030944!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1514117193834" width="600" height="450" frameborder="0" allowfullscreen></iframe>      
     </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

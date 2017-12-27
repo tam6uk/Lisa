@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий "Baxter of California"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-	<header class="main-header">
+	<header class="main-header-other">
       	<div class="container flex-header">
       		<a href="index.html" class="logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
         	<nav class="main-navigation">
@@ -16,7 +17,7 @@
             		<li><a href="#">Информация</a></li>
             		<li><a href="#">Новости</a></li>
             		<li><a href="price.html">Прайс-лист</a></li>
-            		<li><a href="shop.html" class="active">Магазин</a></li>
+            		<li><a href="shop.html" class="active inner">Магазин</a></li>
             		<li><a href="#">Контакты</a></li>
           		</ul>
         	</nav>
@@ -67,7 +68,7 @@
 						
 						<div class="product-inside">
 							<h2>В набор входят:</h2>
-							<ul class="list product-inside-list">
+							<ul>
 								<li>Средство для умывания (50 мл)</li>
 								<li>Увлажняющий крем (50 мл)</li>
 								<li>Крем для бритья (50 мл)</li>
@@ -94,17 +95,39 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#"></a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
           		<p>Разработано:</p>
-          		<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          		<a class="btn btn-small" href="https://htmlacademy.ru">HTML Academy</a>
         	</div>
       	</div>
     </footer>
+	
+    <div class="overlay"></div>
 
+    <div class="popup-log upper">
+        <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
+        <h2 class="popup-header">Личный кабинет</h2>
+        <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
+        <form class="popup-form" action="https://echo.htmlacademy.ru"  method="get">
+            <div class="popup-login">
+                <input type="text" placeholder="Логин" name="login">
+            </div>
+            <div class="popup-password">
+                <input type="text" placeholder="Пароль" name="password">
+            </div>
+            <div class="help-pass">
+                <input type="checkbox" class="popup-check" id="popup-check">
+                <label for="popup-check">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+            </div>
+            <button type="submit" class="btn popup-button-in">Войти</button>
+      </form>
+    </div>
+	<script src="js/script.js"></script>
 </body>
 </html>

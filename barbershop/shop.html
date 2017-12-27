@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин барбершопа «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 	
-	<header class="main-header">
+	<header class="main-header-other">
       	<div class="container flex-header">
       		<a href="index.html" class="logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
         	<nav class="main-navigation">
@@ -28,12 +29,12 @@
 
 	<main>
 		<div class="container">
-			<h1 class="category-title">Средства для ухода</h1>
+			<h1 class="price-title">Средства для ухода</h1>
 			<div class="breadcrumbs">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="shop.html">Магазин</a></li>
-					<li><a>Средства для ухода</a></li>
+					<li><a class="active">Средства для ухода</a></li>
 				</ul>			
 			</div>
 
@@ -44,32 +45,32 @@
 		                	<legend class="filter-name">Производители:             	
 		                	</legend>
 
-		                	<div class="">
+		                	<div class="filter-input">
 		                		<input type="checkbox" value="" name="manuf1" id="manuf1" checked>
 					      		<label for="manuf1">Baxter of California</label>
 					      	</div>
 							
-					      	<div class="">
+					      	<div class="filter-input">
 					      		<input type="checkbox" value="" name="manuf2" id="manuf2">
 					      		<label for="manuf2">Mr Natty</label>
 					      	</div>
 
-					      	<div class="">
-					      		<input type="checkbox" value="" name="manuf3" id="manuf3" checked>
+					      	<div class="filter-input">
+					      		<input type="checkbox" value="" name="manuf3" id="manuf3" disabled checked>
 					      		<label for="manuf3">Suavecito</label>
 					      	</div>
 					      	
-					      	<div class="">
+					      	<div class="filter-input">
 					      		<input type="checkbox" value="" name="manuf4" id="manuf4">
 					      		<label for="manuf4">Malin+Goetz</label>
 					      	</div>
 					      	
-					      	<div class="">
+					      	<div class="filter-input">
 					      		<input type="checkbox" value="" name="manuf5" id="manuf5">
 					      		<label for="manuf5">Murray’s</label>
 					      	</div>
 					      	
-					      	<div class="">
+					      	<div class="filter-input">
 					      		<input type="checkbox" value="" name="manuf6" id="manuf6" checked>
 					      		<label for="manuf6">American Crew</label>
 					      	</div>
@@ -79,24 +80,24 @@
 		                <fieldset class="filter-groups">              	
 		                	<legend class="filter-name">Группы товаров:</legend>
 
-		                	<div class="">
-		                		<input type="radio" value="" name="product-group" id="shaving" checked>
+		                	<div class="filter-input">
+		                		<input type="radio" value="" name="product-group" id="shaving" >
 		                    	<label for="shaving">Бритвенные принадлежности</label>
 		                	</div>
 		                    
-		                    <div class="">
+		                    <div class="filter-input">
 		                    	<input type="radio" value="" name="product-group" id="care" checked>
 		                    	<label for="care">Средства для ухода</label>
 		                    </div>
 		                    
-		                    <div class="">
-		                    	<input type="radio" value="" name="product-group" id="accessories">
+		                    <div class="filter-input">
+		                    	<input type="radio" value="" name="product-group" id="accessories" disabled>
 		                    	<label for="accessories">Аксессуары</label>
 		                    </div>
 		                    
 		                </fieldset> 
 		                     
-		                <button class="btn" type="submit">Показать</button>
+		                <button class="btn btn-show" type="submit">Показать</button>
 		            </form>
 				</div>
 
@@ -110,7 +111,7 @@
 								</div>
 							</a>
 							<a href="item.html">
-								<h2 class="noup">Набор для путешествий
+								<h2>Набор для путешествий
 									<span class="upper"><br>«Baxter of California»</span>
 								</h2>
 							</a>
@@ -128,7 +129,7 @@
 								</div>
 							</a>
 							<a href="#">
-								<h2 class="noup">Увлажняющий кондиционер
+								<h2>Увлажняющий кондиционер
 									<span class="upper"><br>«Baxter of California»</span>
 								</h2>
 							</a>
@@ -138,7 +139,8 @@
 								<a href="#" class="btn product-btn">Купить</a>
 							</div>
 						</div>
-
+						
+						
 						<div class="product-card">
 							<a href="#">
 								<div class="product-shop-img">
@@ -146,7 +148,7 @@
 								</div>
 							</a>
 							<a href="#">
-								<h2 class="noup">Гель для волос
+								<h2>Гель для волос
 									<span class="upper"><br>«Suavecito»</span>
 								</h2>
 							</a>
@@ -163,7 +165,7 @@
 								</div>
 							</a>
 							<a href="#">
-								<h2 class="noup">Глина для укладки волос
+								<h2>Глина для укладки волос
 									<span class="upper"><br>«American crew»</span>
 								</h2>
 							</a>
@@ -180,7 +182,7 @@
 								</div>
 							</a>
 							<a href="#">
-								<h2 class="noup">Гель для волос
+								<h2>Гель для волос
 									<span class="upper"><br>«American crew»</span>
 								</h2>
 							</a>
@@ -197,7 +199,7 @@
 								</div>
 							</a>
 							<a href="#">
-								<h2 class="noup">Набор для бритья
+								<h2>Набор для бритья
 									<span class="upper"><br>«Baxter of California»</span>
 								</h2>
 							</a>
@@ -234,17 +236,40 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#"></a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
           		<p>Разработано:</p>
-          		<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          		<a class="btn btn-small" href="https://htmlacademy.ru">HTML Academy</a>
         	</div>
       	</div>
     </footer>
+	
+    <div class="overlay"></div>
 
+    <div class="popup-log upper">
+        <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
+        <h2 class="popup-header">Личный кабинет</h2>
+        <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
+        <form class="popup-form" action="https://echo.htmlacademy.ru"  method="get">
+            <div class="popup-login">
+                <input type="text" placeholder="Логин" name="login">
+            </div>
+            <div class="popup-password">
+                <input type="text" placeholder="Пароль" name="password">
+            </div>
+            <div class="help-pass">
+                <input type="checkbox" class="popup-check" id="popup-check">
+                <label for="popup-check">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+            </div>
+            <button type="submit" class="btn popup-button-in">Войти</button>
+      </form>
+    </div>
+
+	<script src="js/script.js"></script>
 </body>
 </html>

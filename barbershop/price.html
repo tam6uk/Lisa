@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Прайс-лист барбершопа "Бородинский"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-	<header class="main-header">
+	<header class="main-header-other">
       	<div class="container flex-header">
       		<a href="index.html" class="logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
         	<nav class="main-navigation">
@@ -35,59 +36,64 @@
 					<li><a class="active">Прайс-лист</a></li>
 				</ul>
 			</div>
+			<div class="price-content">
+				<div class="heading-classic">
+					<div class="line"></div>
+					<span>Истинно мужская классика</span>
+					<div class="line"></div>
+				</div>
 
-			<div class="heading-classic"><p>Истинно мужская классика<p></div>
+				<div class="we-use-and-price">
 
-			<div class="we-use-and-price">
+					<div class="we-use">
+				    	<h2 class="we-use-title">Мы используем только лучшие средства:</h2>
+				      	<ul>
+				        	<li><a href="#">Baxter of California</a></li>
+				        	<li><a href="#">Mr Natty</a></li>
+				        	<li><a href="#">Suavecito</a></li>
+				        	<li><a href="#">Malin+Goetz</a></li>
+				      	</ul>
+			    	</div>
 
-				<div class="we-use">
-			    	<h2 class="we-use-title">Мы используем только лучшие средства:</h2>
-			      	<ul class="we-use-list">
-			        	<li><a href="#">Baxter of California</a></li>
-			        	<li><a href="#">Mr Natty</a></li>
-			        	<li><a href="#">Suavecito</a></li>
-			        	<li><a href="#">Malin+Goetz</a></li>
-			      	</ul>
-		    	</div>
+				    <div class="price-table">
+				        <h2 class="price-tabel-title">Цены на услуги наших мастеров:</h2>
+				      	<table>
+				        	<tr>
+				          		<td>Стрижка</td>
+				          		<td class="price-text">1500 &#8381;</td>
+				        	</tr>
+				        	<tr>
+				          		<td>Стрижка бороды</td>
+				          		<td class="price-text">500 &#8381;</td>
+				        	</tr>
+				        	<tr>
+				          		<td>Накрутка усов</td>
+				          		<td class="price-text">350 &#8381;</td>
+				        	</tr>
+				      	</table>
+				    </div>
 
-			    <div class="price-table">
-			        
-			      	<table>
-			      		<caption class="price-title">Цены на услуги наших мастеров:</caption>
-			        	<tr>
-			          		<td>Стрижка</td>
-			          		<td class="price-text">1500 ₽</td>
-			        	</tr>
-			        	<tr>
-			          		<td>Стрижка бороды</td>
-			          		<td class="price-text">500 ₽</td>
-			        	</tr>
-			        	<tr>
-			          		<td>Накрутка усов</td>
-			          		<td class="price-text">350 ₽</td>
-			        	</tr>
-			      	</table>
-			    </div>
+				</div>
+			    
+			    <div class="about-us">
+		      		<h2 class="about-us-title">Несколько слов о нас:</h2>
+		      		<div class="about-us-text">
+		      			<div class="about-us-left">
+			        		<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			      		</div>
 
+			      		<div class="about-us-right">
+			        		<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			      		</div>
+			      	</div>
+				</div>
 			</div>
-		    
-		    <div class="about-us">
-	      		<h2 class="about-us-title">Несколько слов о нас:</h2>
-	      		<div class="about-us-text">
-	      			<div class="about-us-left">
-		        		<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-		      		</div>
-
-		      		<div class="about-us-right">
-		        		<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-		      		</div>
-		      	</div>
-			</div>
+			
 
 		</div>		
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer-other">
       	<div class="container flex-footer">
         	<div class="footer-contacts">
           		<p>Барбершоп «Бородинский»<br>
@@ -98,17 +104,40 @@
         	<div class="footer-social">
           		<p>Давайте дружить!</p>
                 <ul>
-                    <li><a class="btn social-btn social-btn-vk" href="#">Вконтакте</a></li>
-                    <li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                    <li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
+                    <li><a class="btn social-btn social-btn-vk" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-fb" href="#"></a></li>
+                    <li><a class="btn social-btn social-btn-inst" href="#"></a></li>
                 </ul>        		
         	</div>
         	<div class="footer-copyright">
           		<p>Разработано:</p>
-          		<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          		<a class="btn btn-small" href="https://htmlacademy.ru">HTML Academy</a>
         	</div>
       	</div>
     </footer>
-    
+	
+    <div class="overlay"></div>
+
+    <div class="popup-log upper">
+        <button id="js-poplog-close" class="popup-close" title="Закрыть"></button>
+        <h2 class="popup-header">Личный кабинет</h2>
+        <p class="popup-text">Введите пожалуйста свой логин и пароль</p>
+        <form class="popup-form" action="https://echo.htmlacademy.ru"  method="get">
+            <div class="popup-login">
+                <input type="text" placeholder="Логин" name="login">
+            </div>
+            <div class="popup-password">
+                <input type="text" placeholder="Пароль" name="password">
+            </div>
+            <div class="help-pass">
+                <input type="checkbox" class="popup-check" id="popup-check">
+                <label for="popup-check">Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+            </div>
+            <button type="submit" class="btn popup-button-in">Войти</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
