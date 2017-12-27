@@ -789,8 +789,11 @@ popup
 
 .popup {
 	position: fixed;
-	top: 50px;
-	left: calc(50% - 480px);
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 960px;
 	padding-right: 100px;
 	padding-left: 100px;
@@ -895,7 +898,8 @@ popup
 }
 
 .popup-error {
-	animation: shake 0.7s;
+	-webkit-animation: shake 0.5s;
+	        animation: shake 0.5s;
 }
 
 /*---------------
@@ -1393,14 +1397,32 @@ catalog
 	width: 260px;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translate(-49%, -50%);
+            transform: translate(-49%, -50%);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translate(-51%, -50%);
+            transform: translate(-51%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-49%, -50%);
+            transform: translate(-49%, -50%);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-51%, -50%);
+            transform: translate(-51%, -50%);
   }
 }

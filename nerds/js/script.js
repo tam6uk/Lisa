@@ -21,26 +21,21 @@ popup_close.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup_feedback.classList.remove("popup-show");
 	overlay.classList.remove("popup-show");
+	popup_feedback.classList.remove("popup-error");
 })
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
 		popup_feedback.classList.remove("popup-show");
 		overlay.classList.remove("popup-show");
+		popup_feedback.classList.remove("popup-error");
 	}
 })
 
 overlay.onclick = function() {
-		popup_feedback.classList.remove("popup-show");
-		overlay.classList.remove("popup-show");
-}
-
-for (var i = 0; i < slides_control.length; i++ ) {
-	console.log(i);
-	slides_control[i].onclick = function() {
-		slides[i].style.display = "block";
-		console.log(i);
-	}
+	popup_feedback.classList.remove("popup-show");
+	overlay.classList.remove("popup-show");
+	popup_feedback.classList.remove("popup-error");
 }
 
 form_feedback.addEventListener("submit", function(event){
@@ -52,12 +47,23 @@ form_feedback.addEventListener("submit", function(event){
 	}
 })
 
-// slides_control[slide_index].onclick = function() {
-// 	console.log(slide_index);
-// 	slides[slide_index].style.display = "block";
-// 	for (var i = 0; i < slides.length; i++) {
-// 		if (i != slide_index) {
-// 			slides[i].style.display = "none";
-// 		}		
+var slide_def = 0;
+slides[slide_def].style.display="block";
+
+function currentSlide(n) {
+	for (var i = 0; i < slides.length; i++){
+		slides[i].style.display = "none";
+		console.log("success");
+	}
+	slides[n].style.display = "block";
+	console.log(n);
+}
+
+// for (var i = 0; i < slides_control.length; i++ ) {
+// 	console.log(i);
+// 	slides_control[i].onclick = currentSlide(i) {
+// 		slides[i].style.display = "block";
+// 		console.log(i);
 // 	}
 // }
+
